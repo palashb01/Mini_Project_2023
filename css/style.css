@@ -14,7 +14,7 @@ body {
   --primry-color: #888888;
   --button-background: #4b709e;
   --primary-button-background: #fe7649;
-  --background-color: #f0f7ff;
+  --background-color: #dcecda;
 }
 
 h1,
@@ -44,7 +44,8 @@ button {
   color: var(--primry-color);
 }
 
-p {
+p,
+.meet_the_team_desc{
   font-size: 1.8rem;
   line-height: 150%;
   font-style: normal;
@@ -151,14 +152,14 @@ header .right-side-menu .sub-menu a {
 
 header .right-side-menu .sub-menu button {
   padding: 0.5rem 2.5rem;
-  background-color: var(--button-background);
+  background-color: rgb(26, 161, 12);
   color: #fff;
   position: relative;
   z-index: 9;
 }
 
 header .right-side-menu .sub-menu button:hover {
-  background: #1b3d68;
+  background: rgb(72, 112, 19);
 }
 
 header .right-side-menu .sub-menu a li:hover {
@@ -240,8 +241,8 @@ header .right-side-menu .sub-menu a li:hover {
 .common-section {
   width: 100%;
   height: 70rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 9rem;
   padding: 0 20rem;
 }
@@ -274,7 +275,7 @@ header .right-side-menu .sub-menu a li:hover {
   height: inherit;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -297,7 +298,7 @@ header .right-side-menu .sub-menu a li:hover {
 
 .common-section .right-side .common-button {
   padding: 1rem 3rem;
-  background-color: var(--primary-button-background);
+  background-color: rgb(26, 161, 12);
   margin-right: 2rem;
   color: #fff;
 }
@@ -305,23 +306,30 @@ header .right-side-menu .sub-menu a li:hover {
 .common-section .right-side button:last-child {
   color: var(--main-color);
   background-color: transparent;
+  /*color: white;*/
 }
 
 .common-section .right-side .common-button:hover {
-  background: #cc491d;
+  background: rgb(72, 112, 19);
 }
 
 .common-section .right-side .common-button-normal:hover {
-  background: var(--primary-button-background);
-  color: #f0f7ff;
+  background: rgb(72, 112, 19);
 }
+
+.common-section .right-side .common-button-normal:hover {
+  color: white !important;
+}
+/*.common-section .right-side .common-button-normal a:hover{*/
+/*  color: white;*/
+/*}*/
 
 /* ------------------- our 3rd section  css style 
   ------------------------------------ */
 
 .section-third {
   width: 100%;
-  height: 70rem;
+  height: 75rem;
   background: var(--background-color);
   padding: 3rem 20rem;
 }
@@ -333,13 +341,24 @@ header .right-side-menu .sub-menu a li:hover {
   text-align: center;
 }
 
-.section-third p {
+.section-third p,
+{
   width: 40rem;
   height: 9rem;
   margin-bottom: 3rem;
   text-align: center;
   margin: auto;
 }
+
+.meet_the_team_desc{
+  width: 600px;
+  height: 9rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin: auto;
+}
+
+
 
 .section-third .section-third-task {
   display: grid;
