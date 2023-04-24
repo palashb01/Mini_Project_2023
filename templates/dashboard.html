@@ -14,6 +14,8 @@
     <title>AgroAI</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
   <body>
     <header>
       <nav>
@@ -107,7 +109,7 @@
         ---------------------------------------------------------------------- -->
     <section class="section-third" id="features">
       <h2>Features</h2>
-      <p>
+      <p style="text-align: center">
         The application offers a range of features to support precision farming
         and maximize crop yield.
       </p>
@@ -179,45 +181,72 @@
       Plz susbsribe to Thapa Technical. It means a world to me ✌. 
         ---------------------------------------------------------------------- -->
 
-    <section class="common-section" id="how_it_works">
+    <section class="carosuel-design" id="how_it_works">
       <!-- left side of section 2  -->
-      <div class="left-side">
-        <img src="../css/section5.png" alt="section5" />
-      </div>
+<!--      <div class="left-side">-->
+<!--        <img src="../css/section5.png" alt="section5" />-->
+<!--      </div>-->
 
-      <!-- right side of section 2  -->
-      <div class="right-side">
-        <h2>How It Works</h2>
+<!--      &lt;!&ndash; right side of section 2  &ndash;&gt;-->
+<!--      <div class="right-side">-->
+<!--        <h2>How It Works</h2>-->
 
-        <div class="fitness-goals">
-          <div class="rule1">
-            <h3>
-              <i class="fas fa-heart"></i> We will take care of your fitness
-              goals
-            </h3>
-            <p>
-              lamet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Track your daily habits
-            </p>
-          </div>
+<!--        <div class="fitness-goals">-->
+<!--          <div class="rule1">-->
+<!--            <h3>-->
+<!--              <i class="fas fa-heart"></i> We will take care of your fitness-->
+<!--              goals-->
+<!--            </h3>-->
+<!--            <p>-->
+<!--              lamet minim mollit non deserunt ullamco est sit aliqua dolor do-->
+<!--              amet sint. Track your daily habits-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="rule2">
-            <h3>
-              <i class="fas fa-heart"></i> Track your daily habits with water
-            </h3>
-            <p>
-              lamet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Track your daily habits
-            </p>
-          </div>
+<!--          <div class="rule2">-->
+<!--            <h3>-->
+<!--              <i class="fas fa-heart"></i> Track your daily habits with water-->
+<!--            </h3>-->
+<!--            <p>-->
+<!--              lamet minim mollit non deserunt ullamco est sit aliqua dolor do-->
+<!--              amet sint. Track your daily habits-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="rule3">
-            <h3><i class="fas fa-heart"></i> Track your weight and waist</h3>
-            <p>
-              lamet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Track your daily habits
-            </p>
-          </div>
+<!--          <div class="rule3">-->
+<!--            <h3><i class="fas fa-heart"></i> Track your weight and waist</h3>-->
+<!--            <p>-->
+<!--              lamet minim mollit non deserunt ullamco est sit aliqua dolor do-->
+<!--              amet sint. Track your daily habits-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="https://picsum.photos/300/200" alt="Card image">
+              <div>
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae enim non elit luctus finibus. Praesent rutrum, nulla in bibendum pharetra, dolor odio malesuada tortor, eu laoreet eros erat vel velit.</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="https://picsum.photos/300/200" alt="Card image">
+              <div>
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae enim non elit luctus finibus. Praesent rutrum, nulla in bibendum pharetra, dolor odio malesuada tortor, eu laoreet eros erat vel velit.</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="https://picsum.photos/300/200" alt="Card image">
+              <div>
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae enim non elit luctus finibus. Praesent rutrum, nulla in bibendum pharetra, dolor odio malesuada tortor, eu laoreet eros erat vel velit.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -309,5 +338,21 @@
         </div>
       </footer>
     </section>
+<script>
+  new Splide('.splide', {
+    type: 'loop',
+    perPage: 1,
+    perMove: 1,
+    gap: '1rem',
+    breakpoints: {
+      768: {
+        perPage: 2,
+      },
+      576: {
+        perPage: 1,
+      }
+    }
+  }).mount();
+</script>
   </body>
 </html>
